@@ -1,8 +1,14 @@
 {
   "manifest_version": 3,
   "name": "Reading time",
-  "version": "0.0",
+  "version": "0.1",
   "description": "Adds the expected reading time to any blog or documentation page.",
+  "content_scripts": [{
+    "js": ["scripts/content.js"],
+    "matches": [
+      "*://*/*"
+    ]
+  }],
   "icons": {
     "16":  "icons/16.png",
     "32":  "icons/32.png",
